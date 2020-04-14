@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nagikiShopSolution.Data", "nagikiShopSolution.Data\nagikiShopSolution.Data.csproj", "{4A123E92-E076-490C-B7AA-C22875FACB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nagikiShopSolution.Application", "nagikiShopSolution.Application\nagikiShopSolution.Application.csproj", "{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{3C037340-E3C7-4244-9E8F-62465A59B0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C037340-E3C7-4244-9E8F-62465A59B0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C037340-E3C7-4244-9E8F-62465A59B0F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A123E92-E076-490C-B7AA-C22875FACB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A123E92-E076-490C-B7AA-C22875FACB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A123E92-E076-490C-B7AA-C22875FACB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A123E92-E076-490C-B7AA-C22875FACB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
