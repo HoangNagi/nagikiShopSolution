@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using nagikiShopSolution.Data.Configurations;
 using nagikiShopSolution.Data.Entities;
@@ -9,7 +10,7 @@ using System.Text;
 
 namespace nagikiShopSolution.Data.EF
 {
-    public class NagikiShopDbContext : DbContext
+    public class NagikiShopDbContext : IdentityDbContext
     {
         public NagikiShopDbContext(DbContextOptions options) : base(options)
         {
