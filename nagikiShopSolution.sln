@@ -3,16 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nagikiShopSolution.WebApp", "nagikiShopSolution.WebApp\nagikiShopSolution.WebApp.csproj", "{3C037340-E3C7-4244-9E8F-62465A59B0F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nagikiShopSolution.WebApp", "nagikiShopSolution.WebApp\nagikiShopSolution.WebApp.csproj", "{3C037340-E3C7-4244-9E8F-62465A59B0F9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A56F8778-31EF-4A07-B0C6-76F2463F3BB4}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nagikiShopSolution.Data", "nagikiShopSolution.Data\nagikiShopSolution.Data.csproj", "{4A123E92-E076-490C-B7AA-C22875FACB80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nagikiShopSolution.Data", "nagikiShopSolution.Data\nagikiShopSolution.Data.csproj", "{4A123E92-E076-490C-B7AA-C22875FACB80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nagikiShopSolution.Application", "nagikiShopSolution.Application\nagikiShopSolution.Application.csproj", "{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nagikiShopSolution.Application", "nagikiShopSolution.Application\nagikiShopSolution.Application.csproj", "{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nagikiShopSolution.Utilities", "nagikiShopSolution.Utilities\nagikiShopSolution.Utilities.csproj", "{3D725024-AD96-45A0-A854-94B3197070D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NagikiShopSolution.ViewModels", "NagikiShopSolution.ViewModels\NagikiShopSolution.ViewModels.csproj", "{BA4B3C8D-DBD3-4758-9414-2658A20E83FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nagikiShopSolution.BackendApi", "nagikiShopSolution.BackendApi\nagikiShopSolution.BackendApi.csproj", "{B8CE1AF5-2652-466D-B5E7-23B4B1A72E10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +38,18 @@ Global
 		{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6D39DF4-4DB6-43C3-B027-8D0837ACEC91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D725024-AD96-45A0-A854-94B3197070D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D725024-AD96-45A0-A854-94B3197070D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D725024-AD96-45A0-A854-94B3197070D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D725024-AD96-45A0-A854-94B3197070D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4B3C8D-DBD3-4758-9414-2658A20E83FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4B3C8D-DBD3-4758-9414-2658A20E83FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4B3C8D-DBD3-4758-9414-2658A20E83FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4B3C8D-DBD3-4758-9414-2658A20E83FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CE1AF5-2652-466D-B5E7-23B4B1A72E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CE1AF5-2652-466D-B5E7-23B4B1A72E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CE1AF5-2652-466D-B5E7-23B4B1A72E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CE1AF5-2652-466D-B5E7-23B4B1A72E10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
