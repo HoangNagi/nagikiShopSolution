@@ -15,4 +15,8 @@
     <ProjectReference Include="..\NagikiShopSolution.ViewModels\NagikiShopSolution.ViewModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\user_content\" />
+  </ItemGroup>
+
 </Project>

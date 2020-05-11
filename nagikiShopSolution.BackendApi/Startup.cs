@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using nagikiShopSolution.Application.Catalog.Products;
+using nagikiShopSolution.Application.Common;
 using nagikiShopSolution.Data.EF;
 using nagikiShopSolution.Utilities.Constants;
 
@@ -30,7 +31,9 @@ namespace nagikiShopSolution.BackendApi
         {
             services.AddDbContext<NagikiShopDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString(SystemContants.MainConnectionString)));
+            services.AddScoped<IStorageService, FileStorageService>();
             services.AddScoped<IPublicProductService, PublicProductService>();
+            services.AddScoped<IManageProductService, ManageProductService>();
             services.AddControllersWithViews();
             services.AddSwaggerGen(c =>
             {

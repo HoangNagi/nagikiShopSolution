@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using NagikiShopSolution.ViewModels.Catalog.ProductImages;
 using NagikiShopSolution.ViewModels.Catalog.Products;
 using NagikiShopSolution.ViewModels.Common;
 using System;
@@ -17,9 +18,11 @@ namespace nagikiShopSolution.Application.Catalog.Products
         Task<bool> UpdateStock(int productId, int addedQuantity);
         Task AddViewcount(int productId);
         Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request);
-        Task<int> AddImages(int productId, List<IFormFile> files);
-        Task<int> UpdateImages(int imageId, string caption, bool isDefault);
-        Task<int> RemoveImages(int imageId);
-        Task<List<ProductImageViewModel>> GetListImage(int ProductId);
+        Task<int> AddImage(int productId,ProductImageCreateRequest request);
+        Task<int> UpdateImage(int imageId, ProductImageUpdateRequest request);
+        Task<int> RemoveImage(int imageId);
+        Task<List<ProductImageViewModel>> GetListImages(int productId);
+        Task<ProductImageViewModel> GetImageById(int imageId);
+        Task<ProductViewModel> GetById(int productId, string languageId);
     }
 }
