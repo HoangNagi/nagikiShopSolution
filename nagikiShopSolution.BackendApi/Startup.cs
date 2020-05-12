@@ -5,14 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using nagikiShopSolution.Application.Catalog.Products;
 using nagikiShopSolution.Application.Common;
+using nagikiShopSolution.Application.System.Users;
 using nagikiShopSolution.Data.EF;
+using nagikiShopSolution.Data.Entities;
 using nagikiShopSolution.Utilities.Constants;
 
 namespace nagikiShopSolution.BackendApi
@@ -31,9 +35,19 @@ namespace nagikiShopSolution.BackendApi
         {
             services.AddDbContext<NagikiShopDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString(SystemContants.MainConnectionString)));
+
+            services.AddIdentity<AppUser, AppRole>()
+                .AddEntityFrameworkStores<NagikiShopDbContext>()
+                .AddDefaultTokenProviders();
+
             services.AddScoped<IStorageService, FileStorageService>();
             services.AddScoped<IPublicProductService, PublicProductService>();
             services.AddScoped<IManageProductService, ManageProductService>();
+            services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
+            services.AddScoped<SignInManager<AppUser>, SignInManager<AppUser>>();
+            services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
+            services.AddScoped<IUserService, UserService>();
+
             services.AddControllersWithViews();
             services.AddSwaggerGen(c =>
             {

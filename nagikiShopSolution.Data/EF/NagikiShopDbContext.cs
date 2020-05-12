@@ -10,7 +10,7 @@ using System.Text;
 
 namespace nagikiShopSolution.Data.EF
 {
-    public class NagikiShopDbContext : IdentityDbContext
+    public class NagikiShopDbContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
         public NagikiShopDbContext(DbContextOptions options) : base(options)
         {
