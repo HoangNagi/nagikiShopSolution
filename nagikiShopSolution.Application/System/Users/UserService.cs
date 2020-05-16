@@ -66,7 +66,7 @@ namespace nagikiShopSolution.Application.System.Users
                 UserName = request.UserName,
                 PhoneNumber = request.PhoneNumber
             };
-            var result = await _userManager.CreateAsync(user, request.Password);
+            IdentityResult result = await _userManager.CreateAsync(user, request.Password);
             if (result.Succeeded) { return true; }
             return false;
         }
