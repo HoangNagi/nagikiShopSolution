@@ -23,7 +23,7 @@ namespace nagikiShopSolution.BackendApi.Controllers
         [AllowAnonymous]
           public async Task<IActionResult> Authemcate([FromForm]LoginRequest request)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var resultToken =await _userService.Authencate(request);
             if (string.IsNullOrEmpty(resultToken))
@@ -36,7 +36,7 @@ namespace nagikiShopSolution.BackendApi.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Register([FromBody]RegisterRequest request)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var result = await _userService.Register(request);
             if (!result)
