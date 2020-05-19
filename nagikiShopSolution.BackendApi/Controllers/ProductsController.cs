@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using nagikiShopSolution.Application.Catalog.Products;
 using NagikiShopSolution.ViewModels.Catalog.ProductImages;
@@ -14,6 +15,7 @@ namespace nagikiShopSolution.BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly IPublicProductService _publicProductService;
